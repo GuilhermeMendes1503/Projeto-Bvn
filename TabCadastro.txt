@@ -1,0 +1,37 @@
+CREATE SCHEMA IF NOT EXISTS `Bvn` 
+DEFAULT CHARACTER SET utf8;
+
+USE `Bvn`;
+
+
+CREATE TABLE IF NOT EXISTS `Bvn`.`TabCadastro` 
+(
+
+  `ID` INT NOT NULL auto_increment,
+
+  `Nome_Cli` VARCHAR(100),
+
+  `DDD` VARCHAR(3) NULL,
+
+  `Telefone` VARCHAR(100) NULL,
+
+  `Celular` VARCHAR(100) NULL,
+
+  `Email` VARCHAR(100) NULL,
+
+  `Endereco` VARCHAR(100) NULL,
+
+  `Cidade` VARCHAR(100) NULL,
+
+  `Estado` VARCHAR(100) NULL,
+
+  `CEP` VARCHAR(100) NULL,
+  `Cnpj` VARCHAR(100) NULL,
+
+  `I.E.` VARCHAR(100) NULL,
+
+  `Obs` VARCHAR(300) NULL,
+PRIMARY KEY (`ID`)
+)
+
+ENGINE = InnoDB;

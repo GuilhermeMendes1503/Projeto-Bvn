@@ -1,0 +1,35 @@
+USE `freedbtech_Teste`;
+
+
+CREATE TABLE IF NOT EXISTS `freedbtech_Teste`.`TabCadastro` 
+(
+
+  `ID` INT NOT NULL auto_increment,
+
+  `4.5` INT NULL,
+
+  `5.5` INT NULL,
+
+  `6.5` INT NULL,
+
+  `TipoDePagamento` VARCHAR(20) NULL,
+
+  `TipoDoEnvio` VARCHAR(20) NULL,
+
+  `DataDoEnvio` DATE NULL,
+
+  `DataDoRecebimento` DATE NULL,
+
+  `StatusDoPedido` VARCHAR(20) NULL,
+
+  `Frete` VARCHAR(20) NULL,
+
+  `ValorNotaFiscal` INT NULL,
+
+  `N_NotaFiscal` VARCHAR(20) NULL,
+
+  `Desconto` INT NULL,
+PRIMARY KEY (`ID`)
+)
+
+ENGINE = InnoDB;
